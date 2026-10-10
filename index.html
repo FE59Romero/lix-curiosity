@@ -8,43 +8,73 @@
     <meta name="author" content="Felix Romero">
     <meta name="description" content="Lix Curiosity's personal website">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="images/x-icon" href="images/lix_curiosity.ico">
     <title>Lix Curiosity Website</title>
 </head>
 
 <body>
-    <header>
-        <h1>LIX CURIOSITY</h1>
-        <p>Curious about everything. Building, exploring, learning, and documenting the journey.</p>
-        <nav>
+
+    <header class="hero" id="top">
+
+        <div class="hero-brand">
+            <img src="images/lc-minimalist-logo-v2.png" alt="LIX CURIOSITY logo" class="hero-logo">
+
+            <div class="hero-divider"></div>
+
+            <div class="hero-identity">
+                <h1>LIX CURIOSITY</h1>
+                <p>EXPLORE <span>•</span> CREATE <span>•</span> DISCOVER</p>
+            </div>
+
+            <div class="social-links">
+                <a href="YOUR_FACEBOOK_URL" aria-label="Facebook">
+                    <img src="images/facebook.svg" alt="">
+                </a>
+
+                <a href="YOUR_INSTAGRAM_URL" aria-label="Instagram">
+                    <img src="images/instagram.svg" alt="">
+                </a>
+
+                <a href="YOUR_YOUTUBE_URL" aria-label="YouTube">
+                    <img src="images/youtube.svg" alt="">
+                </a>
+            </div>
+
+        </div>
+
+        <nav class="hero-nav" aria-label="Main navigation">
             <ul>
+                <li><a href="#top">Home</a></li>
                 <li><a href="#journey">Journey</a></li>
-                <li><a href="#projects-experience">Projects & Experience</a></li>
+                <li><a href="#projects-experience">Projects</a></li>
                 <li><a href="#adventures">Adventures</a></li>
-                <li><a href="#learning">Things I'm Learning</a></li>
+                <li><a href="#learning">Learning</a></li>
                 <li><a href="#mantra">Mantra</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
     </header>
+
     <main> <!-- Main content goes here -->
         <div class="content-grid">
             <section id="journey">
                 <h2>Journey</h2>
                 <p>
-                    LIX CURIOSITY is a collection of the things I have learned, explored,
-                    built, and experienced along the way. I started this journey with a lot
-                    of curiosity and a lot of things I wanted to understand, and I am still
-                    figuring things out one project at a time.
+                    <strong>LIX CURIOSITY</strong> is a collection of the things I have learned, explored,
+                    built, and experienced along the way. It is my digital journal for
+                    documenting projects, adventures, experiments, and the things that
+                    keep me curious.
                 </p>
 
                 <p>
-                    From working in IT and learning new technology to cycling, hiking,
-                    playing bass, building things, and exploring new hobbies, this website
-                    is my way of documenting the journey and keeping track of the things
-                    that make me curious.
+                    From IT and web development to cycling, outdoor adventures, music,
+                    3D printing, and random ideas that suddenly appear in my head,
+                    this website is a place where I can keep track of the journey.
                 </p>
 
             </section>
+
             <section id="projects-experience">
                 <h2>PROJECTS & EXPERIENCE</h2>
                 <p>
@@ -53,27 +83,46 @@
                     where I document the things I build, experiment with, and work on.
                 </p>
                 <p>Here are some of the projects I have worked on:</p>
-                <ul>
-                    <li>
-                        <strong>Web Development</strong>
-                        <p>Learning HTML, CSS, JavaScript, and building LIX CURIOSITY.</p>
-                    </li>
-                    <li>
-                        <strong>Bikepacking</strong>
-                        <p>Exploring routes, gear, and long-distance cycling.</p>
-                    </li>
-                    <li>
-                        <strong>Bass Guitar</strong>
-                        <p>Learning bass and exploring rock and metal music.</p>
-                    </li>
-                    <li>
-                        <strong>DIY & Experiments</strong>
-                        <p>Building, testing, fixing, and learning random things along the way.</p>
-                    </li>
-                </ul>
+                <dl>
+                    <dt><strong>Web Development</strong></dt>
+                    <dd>Learning HTML, CSS, JavaScript, and building LIX CURIOSITY.</dd>
+                    <dt><strong>Bikepacking</strong></dt>
+                    <dd>Exploring routes, gear, and long-distance cycling.</dd>
+                    <dt><strong>Bass Guitar</strong></dt>
+                    <dd>Learning bass and exploring rock and metal music.</dd>
+                    <dt><strong>DIY &amp; Experiments</strong></dt>
+                    <dd>Building, testing, fixing, and learning random things along the way.</dd>
+                </dl>
             </section>
+
             <section id="adventures">
-                <h2>ADVENTURES</h2>
+                <h2>Adventures</h2>
+                <div class="adventure-grid">
+                    <article class="adventure-card">
+                        <img src="images/first-adventure-sample-v1.jpg" alt="Adventure">
+                        <h3>My First Adventure</h3>
+                        <p>A short story about a journey, what happened, and what I learned.</p>
+                        <a href="#">Explore <span aria-hidden="true">→</span></a>
+                    </article>
+                    <article class="adventure-card">
+                        <img src="images/mt-adventure-sample.jpg" alt="Mountain adventure">
+                        <h3>Mountain Adventures</h3>
+                        <p>Hikes, trails, challenges, and the places I've explored.</p>
+                        <a href="#">Explore <span aria-hidden="true">→</span></a>
+                    </article>
+                    <article class="adventure-card">
+                        <img src="images/Bikepacking-sample.jpg" alt="Bikepacking adventure">
+                        <h3>Bikepacking</h3>
+                        <p>Routes, gear, long rides, and everything I discover along the way.</p>
+                        <a href="#">Explore <span aria-hidden="true">→</span></a>
+                    </article>
+                    <article class="adventure-card">
+                        <img src="images/traveladventure-sample.jpg" alt="Travel adventure">
+                        <h3>Travel &amp; Exploration</h3>
+                        <p>Places, experiences, random discoveries, and stories worth remembering.</p>
+                        <a href="#">Explore <span aria-hidden="true">→</span></a>
+                    </article>
+                </div>
                 <p>
                     I want to spend more time outdoors and experience places beyond the
                     usual routine. This section will document hikes, bikepacking trips,
@@ -85,8 +134,9 @@
                     <li>Engaging in outdoor activities and challenges.</li>
                 </ul>
             </section>
+
             <section id="learning">
-                <h2>THINGS I'M LEARNING</h2>
+                <h2>Things I'm Learning</h2>
                 <p>
                     I have always been interested in learning different things, even when
                     those interests seem completely unrelated. This section is a record of
@@ -103,35 +153,41 @@
                 </ul>
             </section>
         </div>
+
         <section id="mantra">
-            <h2>MANTRA</h2>
-            <p>WHAT THE FUCK ARE YOU AFRAID OF
-            <p>Death: It's part of life.</p>
-            <p>Bankruptcy: You can make it back.</p>
-            <p>Shame: Everyone will forget.</p>
-            <p>Rejection: It happens to everyone.</p>
-            <p>Failure: It's part of growth.</p>
-            <p>Judgement: They'll judge you anyway.</p>
-            <p>Losing people: Not all are meant to stay.</p>
-            <p>Mistakes: You learn from them.</p>
-            <p>Taking risks: Regret hurts more.</p>
-            <p>LIVE EVERY DAY LIKE IT'S YOUR LAST</p>
-            </p>
+            <h2>Mantra</h2>
+            <pre>THE FUCK ARE YOU AFRAID OF
+
+Death: It's part of life.
+Bankruptcy: You can make it back.
+Shame: Everyone will forget.
+Rejection: It happens to everyone.
+Failure: It's part of growth.
+Judgement: They'll judge you anyway.
+Losing people: Not all are meant to stay.
+Mistakes: You learn from them.
+Taking risks: Regret hurts more.
+
+LIVE EVERY DAY LIKE IT'S YOUR LAST</pre>
         </section>
+
         <section id="contact">
-            <h2>CONTACT</h2>
+            <h2>Contact</h2>
             <p>
                 If you want to connect, share an idea, talk about a project, or simply
                 say hello, feel free to reach out.
             </p>
             <ul>
                 <li>Email: <a href="mailto:example@email.com">example@email.com</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/felix-romero" target="_blank">Felix Romero</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/felix-romero" target="_blank"
+                        rel="noopener noreferrer">Felix Romero</a></li>
             </ul>
         </section>
+
     </main>
+
     <footer>
-        <p><a href="#">Back to Top</a></p>
+        <p><a href="#top">Back to Top</a></p>
         <hr>
         <p>&copy; 2026 Felix Romero. All rights reserved.</p>
     </footer>
